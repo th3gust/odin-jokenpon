@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body, button, p{
+    font-size: 1.6rem;
+    font-family: 'ITC Zemke Hand Com', sans-serif;
+    
+}
+
+p{
+    color: #F35A3C;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#scissors{
+    position: absolute;
+    top: 14rem;
+    left: 42rem;
+    transform: scale(.6);
+    transition: transform .3s;
+}
+
+#scissors:hover{
+    transform: scale(.7);
+}
+
+#paper{
+    position: absolute;
+    top: 12.7rem;
+    left: 80.5rem;
+    transform: scale(.6);
+    transition: transform .3s;
+}
+
+#paper:hover{
+    transform: scale(.7);
+}
+
+#rock{
+    position: absolute;
+    top: 46.5rem;
+    left: 62.5rem;
+    transform: scale(.6);
+    transition: transform .3s;
+}
+
+#rock:hover{
+    transform: scale(.7);
+}
+
+#modal{
+    margin: 25vh auto;
+    width: 60rem;
+    height: 35rem;
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    place-items: center;
+
+    padding: 1rem;
+}
+
+#modal p{
+    font-size: 8rem;
+}
+
+#modal p:last-child{
+    grid-column: 1/4;
+    margin: 0;
+}
+
+#modal img{
+    width: 100%;
+}
+
+#modal:not([open]) {
+    display: none;
+}
+
+.container{
+    display: grid;
+}
+
+.counter{
+    margin: .5rem auto;
+    gap: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
