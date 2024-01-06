@@ -35,7 +35,7 @@ function winner(){
         } else if (user == pc){
             victory = "It's a draw"
         } else{
-            victory = 'You Lose'
+            victory = 'You Loose'
             countPc++
             console.log(countPc)
             counter(el.pcCounter, countPc)
